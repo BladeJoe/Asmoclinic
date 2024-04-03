@@ -1,0 +1,265 @@
+.lds-ring {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+
+.lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #2486f7 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.loader__wrapper {
+	position: absolute;
+	width: 100%;
+	display: -ms-grid;
+	display: grid;
+	text-align: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100vh;
+	z-index: 9999999 !important;
+	background-color: rgb(255, 255, 255);
+	opacity: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	overflow: hidden !important;
+	align-items: center;
+	overflow: hidden !important;
+	position: fixed !important;
+}
+
+@font-face {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/mulish-v12-latin-300.woff2') format('woff2'),
+		url('../fonts/mulish-v12-latin-300.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/mulish-v12-latin-regular.woff2') format('woff'),
+		url('../fonts/mulish-v12-latin-regular.woff') format('woff')
+}
+
+@font-face {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/mulish-v12-latin-600.woff2') format('woff2'),
+		url('../fonts/mulish-v12-latin-600.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/mulish-v12-latin-500.woff2') format('woff2'),
+		url('../fonts/mulish-v12-latin-500.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/mulish-v12-latin-700.woff2') format('woff2'),
+		url('../fonts/mulish-v12-latin-700.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 800;
+	src: url('../fonts/mulish-v12-latin-800.woff2') format('woff2'),
+		url('../fonts/mulish-v12-latin-800.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/mulish-v12-latin-900.woff2') format('woff2'),
+		url('../fonts/mulish-v12-latin-900.woff') format('woff');
+}
+
+body {
+	background: url("./../images/background.jpg") fixed no-repeat center;
+	background-size: cover;
+	font-weight: bold;
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+
+}
+
+main {
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+a,
+button {
+	font-weight: bold !important;
+}
+
+
+.social-avatar {
+	width: 200px;
+	height: 200px;
+	-webkit-transform: scale(5);
+	-ms-transform: scale(5);
+	transform: scale(5);
+}
+
+
+.member {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.members {
+	margin: 20px 0;
+
+	-webkit-box-pack: center;
+
+	-ms-flex-pack: center;
+
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.member:nth-child(2n) .member__left {
+	-webkit-box-ordinal-group: 2;
+	-ms-flex-order: 1;
+	order: 1;
+
+}
+
+@media only screen and (max-width:600px) {
+
+
+	.member:nth-child(even) .member__left {
+		-webkit-box-ordinal-group: 0;
+		-ms-flex-order: -1;
+		order: -1;
+
+	}
+
+	.member {
+		margin: 20px 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+}
+
+.member img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	margin: 10px;
+
+}
+
+.member a {
+	color: #9AB5BE !important;
+	text-decoration: none;
+}
+
+.container-gallery {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0 20px;
+}
+
+#fullpage {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-size: contain;
+	background-repeat: no-repeat no-repeat;
+	background-position: center center;
+	background-color: black;
+	overflow: hidden !important;
+<<<<<<< HEAD:uz/assets/css/main124.css
+}
+
+.team__img {
+	width: 100%;
+	object-fit: contain;
+}
+=======
+}
+>>>>>>> 629072499665e4461a828e01887d85a19319acb3:assets/css/main124.css

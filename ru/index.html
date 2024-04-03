@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Asmoclinic - Асмоклиник">
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<script src="./assets/bootstrap/bootstrap.min.js"></script>
+	<script src="./assets/js/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<script src="./assets/js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+	</script>
+	<title>Asmo clinic</title>
+</head>
+
+<body>
+	<div class="loader__wrapper">
+
+		<div class="lds-ring">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+
+	</div>
+
+	<nav class="navbar sticky-lg-top navbar-expand-lg bg-white"
+		style="border-bottom-left-radius:40px ;border-bottom-right-radius: 40px;">
+		<div class="container d-flex justify-content-between">
+			<a href="index.html"><img class="navbar-brand" src="assets/images/logo.png" width="200" height="auto"
+					style="max-width: 200px; width: 100vw;" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<ul class="navbar-nav text-center d-flex ms-auto align-items-center">
+					<li class="nav-item ">
+						<a class="nav-link active" href="#">Главная</a></li>
+					<li class="nav-item">
+						<a class="nav-link" href="./team.html">Врачи</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./gallery.html">Галерея</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./services.html">Услуги</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./results.html">Результаты</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./about-us.html">О нас</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="./../uz/index.html"><img src="./assets/images/lang.png" height="40"
+								alt="Язык"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<main>
+		<section class="hero">
+			<div class="container">
+
+				<div class="d-flex justify-content-end g-5 py-5 "
+					style="background:center no-repeat ;background-image: url('./assets/images/hero-bg.jpg') ;margin: 30px 0;background-size: cover;min-height: 555px; ">
+
+					<div class="col-lg-6 col-12 text-center text-lg-end p-3">
+						<h1 class="lead my-3 fs-2 fw-bold p-5" style="background: rgba( 255, 255, 255, 0.55 );
+						box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+						backdrop-filter: blur( 5px );
+						-webkit-backdrop-filter: blur( 5px );
+						border-radius: 10px;
+						border: 1px solid rgba( 255, 255, 255, 0.18 );">
+							"Будьте заботливы и хорошо относитесь к своей коже. Вы будете носить её каждый день до
+							конца вашей жизни." <br>- Рене Руло -</h1>
+						<a type="button" href="tel:+998555018866"
+							class="btn btn-primary rounded-5 btn-lg px-4 me-md-2">Cвязаться с нами</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container">
+			<div class="d-flex justify-content-center flex-column align-items-center text-center">
+
+				<h2 class="headline m-5">Этапы лечения в клинике Асмо</h2>
+
+
+
+			</div>
+		</section>
+
+
+		<section class="container">
+			<div class="row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 d-flex flex-row flex-wrap gap-5 align-items-center
+				text-center justify-content-center">
+
+				<div class="card rounded-4" style="width: 280px;height: 320px;">
+					<div class="card-body d-flex flex-column justify-content-between align-items-center  p-4">
+						<img src="assets/images/consult.svg" alt="zoom" height="95" width="80">
+						<h4 class="py-4">Консультация</h4>
+						<p class="card-text">Получение консультации от высококвалифицированных врачей</p>
+					</div>
+				</div>
+
+				<div class="card rounded-4" style="width: 280px;height: 320px;">
+					<div class="card-body d-flex flex-column justify-content-between align-items-center  p-4">
+						<img src="assets/images/lupa.svg" alt="zoom" height="95" width="80">
+						<h4 class="py-4">Анализ</h4>
+						<p class="card-text">Проведение анализов с использованием современных технологий, гарантирующих
+							высокое качество и точность</p>
+					</div>
+				</div>
+				<div class="card rounded-4" style="width: 280px;height: 320px;">
+					<div class="card-body d-flex flex-column justify-content-between align-items-center  p-4">
+						<img src="assets/images/detail.svg" alt="zoom" height="95" width="80">
+
+						<h4 class="py-4">Диагноз </h4>
+						<p class="card-text">Диагностика врачами высокого уровня</p>
+					</div>
+				</div>
+				<div class="card rounded-4" style="width: 280px;height: 320px;">
+					<div class="card-body d-flex flex-column justify-content-between align-items-center  p-4">
+						<img src="assets/images/frame.svg" alt="zoom" height="95" width="80">
+						<h4 class="py-4">Лечение</h4>
+						<p class="card-text">Лечение подходящее для пациента (стационарное или амбулаторное)</p>
+					</div>
+				</div>
+
+
+
+
+
+		</section>
+
+
+		<section class="container my-5">
+			<div class="swiper">
+
+			</div>
+			<template id="template">
+				<a class="swiper-slide m-2 text-reset text-decoration-none" href="">
+					<img class="img" src="" alt="img" width="150" height="">
+					<div class="name"></div>
+					<div class="title"></div>
+				</a>
+
+			</template>
+			<script>
+				let arr = [{
+						"name": "Бахром Иламанович",
+						"title": "Кандидат медицинских наук, доцент,врач высшей категории дерматовенеролог ",
+						"img": "./assets/images/avatar/team-1.jpg",
+						"link": "https://www.t.me/Mukhamedov_B"
+					},
+					{
+						"name": "Мурад Абдуджабборович",
+						"title": "Врач высшей категории, дерматовенеролог",
+						"img": "./assets/images/avatar/team-2.jpg",
+						"link": "https://www.t.me/murodpulatov"
+					}, {
+						"name": "Эвелина Владимировна",
+						"title": "Врач 2-категории,					дерматовенеролог, дерматоскопист",
+						"img": "./assets/images/avatar/team-8.jpg",
+						"link": "https://www.t.me/Koldarova_dermatolog"
+					}, {
+						"name": "Джавахир Шаробидинович",
+						"title": "Врач дерматовенеролог",
+						"img": "./assets/images/avatar/team-3.jpg",
+						"link": "https://www.t.me/dermatologist7"
+					}, {
+						"name": "Шахризода Бахадировна",
+						"title": "Детская гинеколог",
+						"img": "./assets/images/avatar/team-10.jpg",
+						"link": "https://www.t.me/dr_Bahadirovna"
+					}, {
+						"name": "Барно Юлдашевна",
+						"title": "Врач высшей категорий,						педиатр ",
+						"img": "./assets/images/avatar/team-4.jpg",
+						"link": "https://www.t.me/"
+					}, {
+						"name": "Малика Ахмаджоновна",
+						"title": "Врач УЗИ",
+						"img": "./assets/images/avatar/team-6.jpg",
+						"link": "https://www.t.me/IbragimdjanovaMalikaxon"
+					}, {
+						"name": "Сухроб Саитахматович",
+						"title": "Врач дерматовенеролог",
+						"img": "./assets/images/avatar/team-7.jpg",
+						"link": "https://www.t.me/Dermatolog_Suhrob"
+					}, {
+						"name": "Обид Джуманалиевич",
+						"title": "Врач дерматовенеролог",
+						"img": "./assets/images/avatar/team-11.jpg",
+						"link": "https://www.t.me/Dermatolog_Obid"
+					}, {
+						"name": "Константин Эдуардович ",
+						"title": "Врач дерматовенеролог, трихолог, трансплантолог",
+						"img": "./assets/images/avatar/team-12.jpg",
+						"link": "https://www.t.me/kimkonstantine"
+					}, {
+						"name": "Имиль Ильнурович",
+						"title": "Врач дерматовенеролог",
+						"img": "./assets/images/avatar/team-9.jpg",
+						"link": "https://www.t.me/Halitov"
+					}
+				]
+				let elList = document.querySelector(".swiper")
+				let elTemplate = document.querySelector("#template").content
+
+
+
+				function render() {
+					for (let i = 0; i < arr.length; i++) {
+						let template = elTemplate.cloneNode(true)
+						template.querySelector("a").href = arr[i].link
+						template.querySelector(".img").src = arr[i].img
+						template.querySelector(".name").textContent = arr[i].name
+						template.querySelector(".title").textContent = arr[i].title
+						elList.appendChild(template)
+					}
+				}
+				render()
+			</script>
+			<a type="button" href="./team.html"
+				class="btn btn-primary d-flex justify-content-center  rounded-5 btn-lg px-4  "
+				style="width: 300px !important;margin: 20px auto;">Ешё</a>
+		</section>
+
+
+
+		<section class="container">
+
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./assets/images/3Z8A9519.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="./assets/images/3Z8A9522.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="./assets/images/3Z8A9552.jpg" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+				<a type="button" href="./gallery.html"
+					class="btn btn-primary d-flex justify-content-center  rounded-5 btn-lg px-4  "
+					style="width: 300px !important;margin: 20px auto;">Ешё</a>
+			</div>
+		</section>
+		<section class="container my-5">
+			<iframe src="https://yandex.ru/map-widget/v1/-/CCURfSrqGC" title="maps" width="100%" height="600"
+				frameborder="0" allowfullscreen="true" style="position:relative;" loading="lazy"></iframe>
+		</section>
+
+
+
+	</main>
+
+	<footer class="text-center text-lg-start bg-white text-muted"
+		style="border-top-left-radius:40px ;border-top-right-radius: 40px;">
+
+
+		<section class="p-2">
+			<div class="container text-center text-md-start mt-5">
+				<div class="row mt-3">
+					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+						<a href="index.html"><img src="./assets/images/logo.png" style="max-width: 60vw;" alt="Logo"
+								width="200px" height="auto"></a>
+
+
+
+						<div class="p-4 pb-0">
+							<section class="mb-4 gap-4 d-flex justify-content-center">
+								<!-- Facebook -->
+								<a href="https://facebook.com" role="button"><i
+										class="bi text-primary bi-facebook"></i></a>
+
+								<!-- Telegram -->
+								<a href="https://www.t.me/dermatovenerologia" role="button"><i
+										class="bi text-info bi-telegram"></i></a>
+
+								<!-- Google -->
+								<a href="https://www.google.com/search?q=asmoclinic" role="button"><i
+										class="bi text-warning bi-google"></i></a>
+
+								<!-- Instagram -->
+								<a href="https://instagram.com/asmoclinic" role="button"><i
+										class="bi text-danger bi-instagram"></i></a>
+							</section>
+							<!-- Section: Social media -->
+						</div>
+
+					</div>
+
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<ul class="navbar-nav ">
+							<li class="nav-item ">
+								<a class="nav-link" href="./index.html">Главная</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="./team.html">Врачи</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./gallery.html">Галерея</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./services.html">Услуги</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./results.html">Результаты</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./about-us.html">О нас</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+						<p>Мирабадский район, улица Фергана Йули 708-дом</p>
+						<a class="nav-link" href="mailto:clinicasmo9:00-17:00il.com">clinicasmo@gmail.com</a><br>
+						<a class="nav-link" href="tel:+998555018866">+998 55 501 88 66</a><br>
+						<a class="nav-link" href="tel:+998909962370">+998 90 996 23 70</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container d-flex justify-content-between w-100" style="background-color: rgba(0, 0, 0, 0.05);">
+
+			<div class="text-center p-4">&copy; 2022 Copyright. Asmo
+				Clinic
+			</div>
+
+			<div class="text-center p-4"><a class="text-reset" href="https://bladejoe.netlify.app">Made by X.B.M</a>
+			</div>
+		</div>
+	</footer>
+	<div class="bar_wpp">
+		<a href="https://www.t.me/murodpulatov" title="Telegram чат" target="_blank">
+			<div class="icon_wpp bg-primary"> <i class="bi bi-telegram" aria-hidden="true"></i></div>
+			<div class="txt_wpp">
+				Telegram чат
+			</div>
+		</a>
+	</div>
+
+
+</body>
+
+</html>
